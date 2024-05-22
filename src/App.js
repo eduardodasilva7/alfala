@@ -4,6 +4,8 @@ import perfil from './img/perfil.svg';
 import sacola from './img/sacola.svg';
 import OptionsHeader from './components/OptionsHeader';
 import IconesHeader from './components/IconesHeader';
+import Header from './components/Header';
+
 
 
 // JEITO 1 - BÁSICO
@@ -78,16 +80,29 @@ import IconesHeader from './components/IconesHeader';
 // export default App;
 
 // FAZENDO O DESAFIO COM COMPONENTES 
-const textoOpcoes = ['CATEGORIA', 'FAVORITOS', 'MINHA ESTANTE']
-const icones = [perfil, sacola]
+// const textoOpcoes = ['CATEGORIA', 'FAVORITOS', 'MINHA ESTANTE']
+// const icones = [perfil, sacola]
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-Header">
+//         <Logo />
+//         <OptionsHeader />
+//         <IconesHeader />
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// UM COMPONENTE QUE CHAME OUTRO COMPONTONENTE
 function App() {
   return (
     <div className="App">
       <header className="App-Header">
-        <Logo />
-        <OptionsHeader />
-        <IconesHeader />
+        <Header />
       </header>
     </div>
   );
