@@ -1,11 +1,10 @@
-import Logo from './components/Logo'
-import './App.css';
-import perfil from './img/perfil.svg';
-import sacola from './img/sacola.svg';
-import OptionsHeader from './components/OptionsHeader';
-import IconesHeader from './components/IconesHeader';
+//import Logo from './components/Logo'
+//import perfil from './img/perfil.svg';
+//import sacola from './img/sacola.svg';
+//import OptionsHeader from './components/OptionsHeader';
+//import IconesHeader from './components/IconesHeader';
 import Header from './components/Header';
-
+import styled from 'styled-components';
 
 
 // JEITO 1 - BÁSICO
@@ -80,8 +79,6 @@ import Header from './components/Header';
 // export default App;
 
 // FAZENDO O DESAFIO COM COMPONENTES 
-// const textoOpcoes = ['CATEGORIA', 'FAVORITOS', 'MINHA ESTANTE']
-// const icones = [perfil, sacola]
 
 // function App() {
 //   return (
@@ -96,15 +93,22 @@ import Header from './components/Header';
 // }
 
 // export default App;
+//UM COMPONENTE QUE CHAME OUTRO COMPONTONENTE
 
-// UM COMPONENTE QUE CHAME OUTRO COMPONTONENTE
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #002f52 35%, #326589 165%);
+li {
+  list-style: none;
+}
+`
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-Header">
-        <Header />
-      </header>
-    </div>
+    <AppContainer>
+      <Header />
+    </AppContainer>
   );
 }
 
